@@ -8,6 +8,7 @@ package easy;
 public class HamingDistance {
 	public static int countDistance(int x, int y){
 		int xor = x^y,distance = 0;
+		System.err.println(xor);
 		for(int i =0; i<32;i++){
 			if(((xor>>i)&1) == 1){
 				distance++;
@@ -17,8 +18,8 @@ public class HamingDistance {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		System.out.println(countDistance(1,4));
 		
-		countDistance(1,4);
 	}
 
 }
